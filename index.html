@@ -2,11 +2,13 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <Title>Assignment - Melaya Priangga</Title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <script src="js/script.js"></script>
     <header class="header-container">
         <section class="logo-icon"></section>
         <section class="nav-container">
@@ -26,27 +28,36 @@
         <div class="section-content-container">
             <!--ini konten autoslide -->
             <div class="section-autoslidebanner">
-                <section class="image-autoslide"></section>
-                <h4>"Liburan jadi menyenangkan bersama Travel Agentku</h4>
+                <img class="banner-img" src="assets/gamba1.jpg"/>
+                <img class="banner-img" src="assets/gambar2.jpg"/>
+                <img class="banner-img" src="assets/gambar3.jpg"/>
+
+                <div class="banner-caption">
+                    <cite>"Liburan jadi menyenangkan bersama Travel Agentku</cite>
+                </div>
+
+                <button onclick="nextSlide(1)">Next Slide</button>
             </div>
 
             <!--ini konten form -->
-            <div class="section-form">
+            <form class="section-form" name="contact-form">
+                <script src="js/script.js"></script>
                 <h3>Contact Us</h3>
                 <h5>Sales akan menghubungi anda 1X24 Jam setelah data kami terima</h5>
                 <label>Your Name:</label><br />
-                <input type="text" class="name-input"><br />
+                <input type="text" class="name-input" name="user-name" required /><br />
                 <label>Email Address:</label><br />
-                <input type="text" class="name-input"><br />
+                <input type="text" class="name-input" name="email-name" required><br />
                 <label>What are you interested in?</label><br />
-                <select name="minat" id="minat" class="dropdown-selected">
+                <select name="minat" id="minat" class="dropdown-selected" required>
                     <option value=""></option>
-                    <option value="saab">Programmer</option>
-                    <option value="opel">Software Enginer</option>
-                    <option value="audi">UI/UX Desain</option>
-                </select><br />
-                <button type="button" class="button">SEND</button> 
-            </div>
+                    <option value="Traveling">Traveling</option>
+                    <option value="Businness">Businness</option>
+                    <option value="Explotarion">Explotarion</option>
+                    <option value="Education">Education</option>
+                </select ><br />
+                <button type="submit" class="button" onclick="submitForm();">SEND</button> 
+            </form>
         </div>
     </section>
 </body>

@@ -38,23 +38,23 @@ hr {
 }
 
 .section-autoslidebanner {
-    height: 450px; 
-    width: 100%;
-    margin-right: 16px;
+    height: 1000px; 
+    width: 80%;
+    margin-right: 24px;
     margin-left: 24px;
-    background-color: antiquewhite;"
+    background-color: antiquewhite;
 }
 
 .section-form {
     height: 400px; 
     width: 60%;
     margin-right: 24px;
-    margin-left: 16px;
+    margin-left: 24px;
     background-color:lightgray; 
     padding-left: 24px; 
     padding-right: 24px;
     padding-top: 24px; 
-    padding-bottom: 24px;"
+    padding-bottom: 24px;
 }
 
 .name-input {
@@ -91,4 +91,14 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px ;
+}
+
+@media only screen and (max-width: 480px){
+    .header-container, 
+    .section-content-container {
+        flex-direction: column;    
+    }
+    .section-form {
+        margin-top: 24px;
+    }
 }
