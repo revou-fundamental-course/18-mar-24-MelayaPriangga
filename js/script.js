@@ -33,13 +33,13 @@ function showSlide(n) {
 
     }
 
-    listImage[indexSlide -1 ].style.display ='block';
-    console.log('jumlah gambar ' + listImage.length);
-    
-    
+
+    listImage[indexSlide - 1 ].style.display ='block';
+    console.log('jumlah gambar ' + listImage.length);  
 
 }
 
+setInterval(() => nextSlide(1), 3000);
 
 
 
