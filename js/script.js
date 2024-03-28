@@ -40,6 +40,6 @@ function showSlide(n) {
 
 }
 
-
+setInterval(() => nextSlide(1), 3000);
 
 
