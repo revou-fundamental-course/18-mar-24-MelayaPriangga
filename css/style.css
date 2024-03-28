@@ -38,12 +38,14 @@ hr {
 }
 
 .section-autoslidebanner {
-    height: 1000px; 
-    width: 80%;
+    height: 700px; 
+    width: 100%;
     margin-right: 24px;
     margin-left: 24px;
     background-color: antiquewhite;
+    align-items: center;
 }
+
 
 .section-form {
     height: 400px; 
@@ -84,16 +86,7 @@ h5 {
     color: black;
 }
 
-.image-autoslide {
-    height: 300px;
-    width: 100%;
-    background-image: url('../assets/pantai.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px ;
-}
-
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 810px){
     .header-container, 
     .section-content-container {
         flex-direction: column;    

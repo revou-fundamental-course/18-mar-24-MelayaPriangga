@@ -30,16 +30,12 @@ function showSlide(n) {
     while (index < listImage.length) {
         listImage[index].style.display = 'none';
         index++;
-
     }
 
     listImage[indexSlide -1 ].style.display ='block';
     console.log('jumlah gambar ' + listImage.length);
     
-    
+    setInterval(() => nextSlide(1), 3000);
 
 }
-
-setInterval(() => nextSlide(1), 3000);
-
 
